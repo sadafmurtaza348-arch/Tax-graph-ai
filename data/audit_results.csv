@@ -1,0 +1,151 @@
+resolved_id,filer_name,cnic,declared_income,engine_cc,monthly_bill_pkr,deviation_score,audit_reasons
+E0015,AliAbbasi,60019-8852574-8,0,2500,277732,70,"Zero/no tax filing but owns a 2500cc vehicle | Zero/no tax filing but electricity bill is 277,732 PKR/month"
+E0039,umar baig,47353-3646552-7,0,2500,260604,70,"Zero/no tax filing but owns a 2500cc vehicle | Zero/no tax filing but electricity bill is 260,604 PKR/month"
+E0043,Sara Farooq,15778-1059486-5,0,660,138565,70,"Zero/no tax filing but owns a 660cc vehicle | Zero/no tax filing but electricity bill is 138,565 PKR/month"
+E0061,AhmedIqbal,72277-2221854-7,0,1500,135488,70,"Zero/no tax filing but owns a 1500cc vehicle | Zero/no tax filing but electricity bill is 135,488 PKR/month"
+E0067,AyeshaIqbal,45614-6634586-5,0,1300,271547,70,"Zero/no tax filing but owns a 1300cc vehicle | Zero/no tax filing but electricity bill is 271,547 PKR/month"
+E0083,Fatima Javed,70931-8307727-9,0,3000,168522,70,"Zero/no tax filing but owns a 3000cc vehicle | Zero/no tax filing but electricity bill is 168,522 PKR/month"
+E0144,TariqButt,74139-7847048-4,0,1000,134675,70,"Zero/no tax filing but owns a 1000cc vehicle | Zero/no tax filing but electricity bill is 134,675 PKR/month"
+E0010,Naveed Qureshi,17331-4842788-0,50000,2500,233114,50,"Owns a 2500cc vehicle (luxury-class) but declared only 50,000 PKR annual income | Electricity bill is 233,114 PKR/month (luxury-level usage) but declared only 50,000 PKR annual income"
+E0109,Hira Malik,69614-2477398-5,50000,2000,258022,50,"Owns a 2000cc vehicle (luxury-class) but declared only 50,000 PKR annual income | Electricity bill is 258,022 PKR/month (luxury-level usage) but declared only 50,000 PKR annual income"
+E0149,Fatima Chaudhry,27038-5205279-2,50000,3000,123110,50,"Owns a 3000cc vehicle (luxury-class) but declared only 50,000 PKR annual income | Electricity bill is 123,110 PKR/month (luxury-level usage) but declared only 50,000 PKR annual income"
+E0012,maria chaudhry,44718-3342608-3,0,2500,15441,35,Zero/no tax filing but owns a 2500cc vehicle
+E0018,Imran Hussain,30032-7273233-2,0,1300,6691,35,Zero/no tax filing but owns a 1300cc vehicle
+E0020,umar sheikh,21226-9153566-1,0,3000,16333,35,Zero/no tax filing but owns a 3000cc vehicle
+E0021,Naveed Javed,82063-3770370-4,0,2500,8704,35,Zero/no tax filing but owns a 2500cc vehicle
+E0023,Umar Iqbal,18392-6672134-0,0,1300,14985,35,Zero/no tax filing but owns a 1300cc vehicle
+E0028,Umar Hussain,34931-9997381-7,0,1000,15003,35,Zero/no tax filing but owns a 1000cc vehicle
+E0044,Asim Gill,82309-8175395-8,0,2000,14063,35,Zero/no tax filing but owns a 2000cc vehicle
+E0047,asim chaudhry,41029-3726327-2,0,1300,12828,35,Zero/no tax filing but owns a 1300cc vehicle
+E0054,Imran Husain,57739-8235969-1,0,1000,3169,35,Zero/no tax filing but owns a 1000cc vehicle
+E0060,ali iqbal,98184-6207974-3,0,660,17744,35,Zero/no tax filing but owns a 660cc vehicle
+E0063,sara iqbal,33053-9689889-7,0,1500,14046,35,Zero/no tax filing but owns a 1500cc vehicle
+E0086,fatima farooq,82848-1170307-8,0,1800,,35,Zero/no tax filing but owns a 1800cc vehicle
+E0088,Mohammad Sheikh,48566-4717770-6,0,1500,6283,35,Zero/no tax filing but owns a 1500cc vehicle
+E0106,MuhammadFarooq,85529-1674975-2,0,3000,14384,35,Zero/no tax filing but owns a 3000cc vehicle
+E0110,imran khan,96200-8750676-6,0,2000,5584,35,Zero/no tax filing but owns a 2000cc vehicle
+E0112,AyeshaGill,73532-3037191-0,0,3000,18062,35,Zero/no tax filing but owns a 3000cc vehicle
+E0131,Noor Butt,41091-7398231-9,0,2500,13301,35,Zero/no tax filing but owns a 2500cc vehicle
+E0141,TariqSheikh,93283-8789116-4,0,2500,10456,35,Zero/no tax filing but owns a 2500cc vehicle
+E0146,Zainab Malik,62184-5628522-3,0,1300,11430,35,Zero/no tax filing but owns a 1300cc vehicle
+E0011,ali hussain,84341-6279418-3,50000,1800,11077,25,"Owns a 1800cc vehicle (luxury-class) but declared only 50,000 PKR annual income"
+E0027,sara awan,71213-1908841-1,50000,3000,9621,25,"Owns a 3000cc vehicle (luxury-class) but declared only 50,000 PKR annual income"
+E0029,MariaIqbal,19880-8434500-8,50000,2000,3223,25,"Owns a 2000cc vehicle (luxury-class) but declared only 50,000 PKR annual income"
+E0036,Sara Qureshi,44179-4426900-5,50000,2000,19965,25,"Owns a 2000cc vehicle (luxury-class) but declared only 50,000 PKR annual income"
+E0037,naveed ahmed,69929-6304573-1,50000,660,112237,25,"Electricity bill is 112,237 PKR/month (luxury-level usage) but declared only 50,000 PKR annual income"
+E0062,Adnan Abbasi,74799-7705062-3,50000,2500,19023,25,"Owns a 2500cc vehicle (luxury-class) but declared only 50,000 PKR annual income"
+E0065,asim awan,81810-8481188-2,50000,2500,12899,25,"Owns a 2500cc vehicle (luxury-class) but declared only 50,000 PKR annual income"
+E0077,hussain iqbal,26544-8945036-1,50000,2500,4222,25,"Owns a 2500cc vehicle (luxury-class) but declared only 50,000 PKR annual income"
+E0089,WaqasBaig,72031-9907391-5,50000,660,168318,25,"Electricity bill is 168,318 PKR/month (luxury-level usage) but declared only 50,000 PKR annual income"
+E0090,zainab gill,45509-6144280-4,50000,1300,284817,25,"Electricity bill is 284,817 PKR/month (luxury-level usage) but declared only 50,000 PKR annual income"
+E0099,usman farooq,96563-2362099-2,50000,3000,16460,25,"Owns a 3000cc vehicle (luxury-class) but declared only 50,000 PKR annual income"
+E0105,asim qureshi,89129-5200476-0,50000,1800,16649,25,"Owns a 1800cc vehicle (luxury-class) but declared only 50,000 PKR annual income"
+E0000,TariqButt,13278-5614226-3,1837477,1000,134675,0,No significant deviation detected
+E0001,Asim Sheikh,87397-8078673-0,1519091,2500,19522,0,No significant deviation detected
+E0002,imran khan,83563-4335942-8,2508318,2000,5584,0,No significant deviation detected
+E0003,FatimaKhan,30926-8090293-5,2167096,2000,14825,0,No significant deviation detected
+E0004,hassan sheikh,59797-2622631-5,2574796,1800,7511,0,No significant deviation detected
+E0005,Ahmad Gill,80284-3094235-6,1516084,,190200,0,No significant deviation detected
+E0006,Faisal Baig,85674-4226067-1,3099026,660,7842,0,No significant deviation detected
+E0007,ali iqbal,23238-7377459-4,2815318,1300,17744,0,No significant deviation detected
+E0008,Zainab Baig,37460-5479144-1,2966295,1000,8609,0,No significant deviation detected
+E0009,asim iqbal,31417-8755439-6,50000,1000,7607,0,No significant deviation detected
+E0013,asim awan,86484-7700828-5,981436,2500,12899,0,No significant deviation detected
+E0014,AliMalik,24371-3564251-2,833353,1500,19184,0,No significant deviation detected
+E0016,AsimButt,99353-5476583-5,2943765,2000,146004,0,No significant deviation detected
+E0017,maria khan,44522-9398441-2,1892556,1300,10757,0,No significant deviation detected
+E0019,Sana Javed,12552-2876828-5,3025613,1000,16693,0,No significant deviation detected
+E0022,Kashif Hussain,50857-7693979-5,2580010,1000,19866,0,No significant deviation detected
+E0024,umar khan,19305-1987737-3,3658861,2500,3873,0,No significant deviation detected
+E0025,ImranIqbal,46500-9143903-3,2170602,,15228,0,No significant deviation detected
+E0026,NoorIqbal,71993-7829332-3,2183334,1000,3374,0,No significant deviation detected
+E0030,Ali Iqbal,31798-7818496-7,3652858,1000,17744,0,No significant deviation detected
+E0031,Bilal Abbasi,10282-7550190-4,3771646,,10368,0,No significant deviation detected
+E0032,adnan javed,30289-4185957-4,2541979,660,274342,0,No significant deviation detected
+E0033,kashif malik,51104-1959074-0,2378921,,14309,0,No significant deviation detected
+E0034,Belal Malik,76562-2344047-2,1563280,1500,202216,0,No significant deviation detected
+E0035,UmarAbbasi,25713-5130808-9,1250626,1300,6294,0,No significant deviation detected
+E0038,Hassan Sheikh,80468-4576135-8,665623,2500,7511,0,No significant deviation detected
+E0040,tariq khan,97538-6022741-1,50000,1300,18523,0,No significant deviation detected
+E0041,Hassan Chaudhry,45697-5727085-9,804163,2500,5931,0,No significant deviation detected
+E0042,NaveedFarooq,76244-9196204-4,2287223,1300,14317,0,No significant deviation detected
+E0045,HussainMalik,58393-3484601-6,3668206,660,171376,0,No significant deviation detected
+E0046,AhmedBaig,37535-5186414-1,3840260,,11403,0,No significant deviation detected
+E0048,SanaAwan,97806-5163555-4,2334597,1300,266432,0,No significant deviation detected
+E0049,Ahmad Javed,39154-4348276-7,50000,1300,17176,0,No significant deviation detected
+E0050,muhammad hussain,62227-6507321-4,2391809,1300,12805,0,No significant deviation detected
+E0051,tariq abbasi,99065-9996207-5,2044580,2500,5040,0,No significant deviation detected
+E0052,waqas farooq,15014-2818692-9,3895903,2000,138565,0,No significant deviation detected
+E0053,faisal butt,60488-4188992-4,2346192,2500,17014,0,No significant deviation detected
+E0055,Naveed Butt,49363-9508103-4,2586081,1000,18453,0,No significant deviation detected
+E0056,Adnan Ahmad,82667-3135534-3,1861379,1800,3992,0,No significant deviation detected
+E0057,asim raza,90676-6049101-6,841692,1300,15347,0,No significant deviation detected
+E0058,usman awan,86019-6406444-7,2346960,1500,5409,0,No significant deviation detected
+E0059,Noor Raza,96356-2422633-4,2229147,,17982,0,No significant deviation detected
+E0064,Maria Chaudhry,70901-9910914-8,765874,3000,15441,0,No significant deviation detected
+E0066,UmarFarooq,78327-9130188-3,1510233,1300,13524,0,No significant deviation detected
+E0068,Umar Abbasi,30028-4589533-1,664314,2000,6294,0,No significant deviation detected
+E0069,Maria Awan,18161-4470105-6,3709972,1500,12509,0,No significant deviation detected
+E0070,HiraJaved,10772-6901533-4,3763892,3000,18645,0,No significant deviation detected
+E0071,asim iqbal,73993-4681284-4,3517668,660,7607,0,No significant deviation detected
+E0072,Sana Abbasi,31632-8841505-2,2263595,1500,256767,0,No significant deviation detected
+E0073,WaqasKhan,21003-8190929-2,3852740,,14609,0,No significant deviation detected
+E0074,fatima abbasi,52906-4551070-7,2838290,1000,6858,0,No significant deviation detected
+E0075,SaraFarooq,20735-8890439-0,1697068,660,138565,0,No significant deviation detected
+E0076,UmarSheikh,95426-1675419-0,2685732,3000,16333,0,No significant deviation detected
+E0078,Fatima Baig,31992-2921542-2,1943155,1000,253296,0,No significant deviation detected
+E0079,Ayesha Abbasi,61990-4327421-1,2336148,1300,271547,0,No significant deviation detected
+E0080,Adnan Ahmad,99687-3030966-9,1528090,1800,3992,0,No significant deviation detected
+E0081,sara baig,19038-9488613-5,50000,1300,8962,0,No significant deviation detected
+E0082,SaraBaig,93307-8713146-2,2351449,1800,8962,0,No significant deviation detected
+E0084,FatimaGill,41963-8796514-9,1630666,1300,9907,0,No significant deviation detected
+E0085,MuhammadJaved,52600-4050766-7,3472454,1300,19682,0,No significant deviation detected
+E0087,SaraJaved,82768-5031966-7,2657707,2500,202383,0,No significant deviation detected
+E0091,Hassan Raza,35105-4630331-7,2797582,1500,11960,0,No significant deviation detected
+E0092,Faisal Ahmed,23176-4256752-4,911764,1000,143032,0,No significant deviation detected
+E0093,Mohammad Chaudhry,45954-1763626-0,2329698,,253814,0,No significant deviation detected
+E0094,Noor Butt,11607-5770422-7,1570702,2000,13301,0,No significant deviation detected
+E0095,Ahmad Farooq,72616-2914064-1,638342,3000,14338,0,No significant deviation detected
+E0096,Tariq Malik,29887-3503120-9,2165317,1500,13242,0,No significant deviation detected
+E0097,kashif awan,89471-4786401-8,3396572,2500,12324,0,No significant deviation detected
+E0098,WaqasAwan,50026-2010496-9,3365238,,16306,0,No significant deviation detected
+E0100,BilalKhan,63545-8558197-9,670154,3000,19468,0,No significant deviation detected
+E0101,Ayesha Ahmed,69510-2194198-3,1802458,2000,7678,0,No significant deviation detected
+E0102,usman awan,25043-4771676-2,3527033,1000,5409,0,No significant deviation detected
+E0103,Bilal Ahmed,87993-5842082-7,1351899,3000,4482,0,No significant deviation detected
+E0104,Hira Farooq,75597-9284509-7,2799431,660,4034,0,No significant deviation detected
+E0107,BilalAwan,93202-9249789-1,931430,1500,,0,No significant deviation detected
+E0108,sana butt,31079-6533187-6,2525176,2500,14349,0,No significant deviation detected
+E0111,Faisal Javed,91973-8416216-0,3325854,3000,168522,0,No significant deviation detected
+E0113,Bilal Ahmed,82199-1229419-8,835363,3000,4482,0,No significant deviation detected
+E0114,MariaButt,94896-3583206-7,946810,1300,16447,0,No significant deviation detected
+E0115,FatimaAwan,73242-8922533-3,3304937,1500,9378,0,No significant deviation detected
+E0116,usman chaudhry,19150-5634662-6,999976,1300,19702,0,No significant deviation detected
+E0117,Ayesha Ahmad,86931-9214801-2,1563710,660,7678,0,No significant deviation detected
+E0118,sana abbasi,69682-6398528-3,3503665,2500,256767,0,No significant deviation detected
+E0119,Umar Awan,15720-6338112-7,795295,1000,12509,0,No significant deviation detected
+E0120,tariq chaudhry,74923-1621086-2,1775969,660,15070,0,No significant deviation detected
+E0121,Maria Butt,78937-8665981-0,738000,1000,16447,0,No significant deviation detected
+E0122,Hussain Sheikh,71537-5446344-5,1919044,3000,295578,0,No significant deviation detected
+E0123,Ali Qureshi,98389-9952696-6,3062207,2000,16649,0,No significant deviation detected
+E0124,ahmed sheikh,40771-5821419-3,3589328,1500,125574,0,No significant deviation detected
+E0125,Tariq Butt,68153-3791137-4,1855258,1000,134675,0,No significant deviation detected
+E0126,AyeshaBaig,59131-8225725-2,2976894,1000,271547,0,No significant deviation detected
+E0127,NaveedRaza,32280-3937176-1,2867283,2000,8027,0,No significant deviation detected
+E0128,Umar Javed,86435-3401116-3,3702716,2000,311620,0,No significant deviation detected
+E0129,fatima khan,70981-5825658-8,3491177,2000,14825,0,No significant deviation detected
+E0130,WaqasAhmed,93746-8118722-4,50000,1300,18315,0,No significant deviation detected
+E0132,ayesha khan,96275-7640518-4,2028549,1300,272903,0,No significant deviation detected
+E0133,AsimJaved,47512-4860745-9,3098163,2000,11662,0,No significant deviation detected
+E0134,Usman Farooq,98835-3294774-1,1968922,3000,16460,0,No significant deviation detected
+E0135,MariaMalik,85965-7121355-2,3886439,3000,16134,0,No significant deviation detected
+E0136,sara raza,36318-3217273-8,2092380,1300,18420,0,No significant deviation detected
+E0137,Fatima Raza,43681-9084065-4,2411301,1500,15190,0,No significant deviation detected
+E0138,AliChaudhry,39571-7667458-8,3371058,1800,13190,0,No significant deviation detected
+E0139,FatimaButt,69609-7183841-4,50000,660,17014,0,No significant deviation detected
+E0140,Naveed Iqbal,71797-1419843-9,3590993,660,193915,0,No significant deviation detected
+E0142,Ahmad Malik,49893-9264869-1,3258773,2500,5876,0,No significant deviation detected
+E0143,HiraGill,58629-8031780-9,1928244,1800,15141,0,No significant deviation detected
+E0145,MariaGill,40947-7084862-1,3793318,,279724,0,No significant deviation detected
+E0147,usman khan,16629-6595355-3,2936164,2500,4190,0,No significant deviation detected
+E0148,Kashif Hussain,86858-4623062-3,1033241,1300,19866,0,No significant deviation detected

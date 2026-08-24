@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}{{ person.filer_name }} - Tax Graph AI{% endblock %}
+
+{% block content %}
+<a class="back-link" href="/people">← Back to All People</a>
+
+<div class="panel">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+        <div>
+            <h1 style="margin:0 0 4px 0;">{{ person.filer_name }}</h1>
+            <p style="color:var(--muted); margin:0; font-size:13px;">CNIC: {{ person.cnic }} &nbsp;|&nbsp; ID: {{ person.resolved_id }}</p>
+        </div>
+        <span class="score-badge score-{{ person.score_class }}" style="font-size:18px; padding:8px 18px;">
+            {{ person.deviation_score }}/100
+        </span>
+    </div>
+</div>
+
+<div class="panel">
+    <h2>Linked Records (Knowledge Graph Connections)</h2>
+    <div class="detail-grid">
+        <div class="detail-item">
+            <div class="k">📄 Tax Filing</div>
+            <div class="v">{{ detail.declared_income | comma }} PKR</div>
+            <div style="color:var(--muted); font-size:12px; margin-top:4px;">
+                Filed return: {{ detail.filed_return }}
+            </div>
+        </div>
+        <div class="detail-item">
+            <div class="k">🚗 Vehicle (OWNS)</div>
+            {% if detail.vehicle_owner_name %}
+                <div class="v">{{ detail.engine_cc }}cc</div>
+                <div style="color:var(--muted); font-size:12px; margin-top:4px;">
+                    Registered as: {{ detail.vehicle_owner_name }}
+                </div>
+            {% else %}
+                <div class="v" style="color:var(--muted);">No vehicle linked</div>
+            {% endif %}
+        </div>
+        <div class="detail-item">
+            <div class="k">⚡ Electricity Bill (PAYS)</div>
+            {% if detail.bill_consumer_name %}
+                <div class="v">{{ detail.monthly_bill_pkr | comma }} PKR/mo</div>
+                <div style="color:var(--muted); font-size:12px; margin-top:4px;">
+                    Billed as: {{ detail.bill_consumer_name }}
+                </div>
+            {% else %}
+                <div class="v" style="color:var(--muted);">No bill linked</div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <h2>Explainable Audit Trail — Why This Score?</h2>
+    {% if reasons and reasons[0] != "No significant deviation detected" %}
+        <ul class="reasons-list">
+        {% for reason in reasons %}
+            <li>⚠️ {{ reason }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p class="no-reasons">✓ No significant deviation detected — declared income is consistent with lifestyle indicators.</p>
+    {% endif %}
+</div>
+
+<div class="panel">
+    <h2>Entity Resolution Match Confidence</h2>
+    <p style="color:var(--muted); font-size:13px; line-height:1.6;">{{ detail.match_reasons }}</p>
+</div>
+{% endblock %}

@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block title %}Guide - Tax Graph AI{% endblock %}
+{% block nav_guide %}active{% endblock %}
+
+{% block content %}
+<h1 style="margin-bottom:4px;">Guide</h1>
+<p style="color:var(--muted); margin-bottom:28px;">How the deviation score is calculated, and Pakistan's income tax slabs for reference.</p>
+
+<div class="panel">
+    <h2>Score Bands — What The Number Means</h2>
+    <table>
+        <thead>
+            <tr><th>Score Range</th><th>Label</th><th>What It Means</th></tr>
+        </thead>
+        <tbody>
+        {% for b in score_bands %}
+            <tr>
+                <td><span class="score-badge score-{{ b.class }}">{{ b.range }}</span></td>
+                <td>{{ b.label }}</td>
+                <td class="reason">{{ b.meaning }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="panel">
+    <h2>Why Points Are Given — Scoring Rules</h2>
+    <p style="color:var(--muted); font-size:13px; margin-top:-8px; margin-bottom:16px;">
+        Every person's score is the sum of whichever of these rules apply to them. This is a transparent,
+        rule-based system (not a black box) — every point on the score can be traced back to one of these reasons.
+    </p>
+    <table>
+        <thead>
+            <tr><th style="width:90px;">Points</th><th>Rule</th><th>Explanation</th></tr>
+        </thead>
+        <tbody>
+        {% for rule in scoring_rules %}
+            <tr>
+                <td><span class="score-badge score-mid">+{{ rule.points }}</span></td>
+                <td>{{ rule.title }}</td>
+                <td class="reason">{{ rule.detail }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <p style="color:var(--muted); font-size:12px; margin-top:14px; margin-bottom:0;">
+        Score is capped at 100. Thresholds used: engine ≥ 1800cc counts as a luxury vehicle,
+        electricity bill ≥ Rs. 80,000/month counts as luxury-level usage, and declared annual income
+        below Rs. 600,000 counts as suspiciously low.
+    </p>
+</div>
+
+<div class="panel">
+    <h2>Pakistan Income Tax Slabs (Salaried Individuals, FY 2025–26)</h2>
+    <p style="color:var(--muted); font-size:13px; margin-top:-8px; margin-bottom:16px;">
+        Reference table for the "declared income" figures shown throughout this app — i.e. if a person's
+        salary falls in a given range, this is roughly what percentage/amount of income tax they should
+        be paying, per FBR's official salary tax slabs.
+    </p>
+    <table>
+        <thead>
+            <tr><th>Annual Taxable Income (PKR)</th><th>Rate</th><th>Tax Formula</th></tr>
+        </thead>
+        <tbody>
+        {% for slab in tax_slabs %}
+            <tr>
+                <td>{{ slab.range }}</td>
+                <td><strong>{{ slab.rate }}</strong></td>
+                <td class="reason">{{ slab.formula }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <p style="color:var(--muted); font-size:12px; margin-top:14px;">
+        A 9% surcharge on the tax amount (not the income) applies where taxable income exceeds Rs. 10,000,000/year.
+        Tax is progressive — each rate only applies to the slice of income inside that bracket, not the whole salary.
+        Rates shown are FBR's official FY 2025–26 salary slabs and are for reference/education only; always confirm
+        current-year rates on FBR's site before relying on this for a real filing.
+    </p>
+</div>
+
+<div class="panel">
+    <h2>Quick Tax Estimator</h2>
+    <p style="color:var(--muted); font-size:13px; margin-top:-8px; margin-bottom:16px;">
+        Enter an annual declared income to see which slab it falls in and the estimated tax.
+    </p>
+    <input id="incomeInput" type="number" placeholder="e.g. 1800000" style="max-width:280px;">
+    <button class="btn" style="margin-left:10px;" onclick="estimateTax()">Calculate</button>
+    <div id="estimateResult" style="margin-top:16px;"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function estimateTax() {
+    const income = document.getElementById('incomeInput').value;
+    if (!income) return;
+    fetch(`/api/tax-estimate?income=${encodeURIComponent(income)}`)
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('estimateResult').innerHTML = `
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <div class="k">Slab</div>
+                        <div class="v">${data.slab_range}</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="k">Rate</div>
+                        <div class="v">${data.slab_rate}</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="k">Estimated Annual Tax</div>
+                        <div class="v">Rs. ${data.estimated_annual_tax.toLocaleString()}</div>
+                    </div>
+                </div>
+                <p style="color:var(--muted); font-size:12px; margin-top:12px;">${data.formula} — roughly Rs. ${data.estimated_monthly_tax.toLocaleString()}/month.</p>
+            `;
+        });
+}
+</script>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}All People - Tax Graph AI{% endblock %}
+{% block nav_people %}active{% endblock %}
+
+{% block content %}
+<h1 style="margin-bottom:20px;">All People ({{ people|length }})</h1>
+
+<div class="panel">
+    <input id="pageSearch" type="text" placeholder="Filter by name or CNIC...">
+    <table id="peopleTable">
+        <thead>
+            <tr>
+                <th data-key="filer_name" style="cursor:pointer;">Name</th>
+                <th data-key="deviation_score" style="cursor:pointer;">Score</th>
+                <th data-key="declared_income" style="cursor:pointer;">Declared Income (PKR)</th>
+                <th>Audit Reason</th>
+            </tr>
+        </thead>
+        <tbody id="peopleBody">
+        {% for r in people %}
+            <tr class="clickable-row person-row"
+                data-name="{{ r.filer_name|lower }}"
+                data-cnic="{{ r.cnic|lower }}"
+                onclick="window.location='/person/{{ r.resolved_id }}'">
+                <td>{{ r.filer_name }}<br><span class="cnic">{{ r.cnic }}</span></td>
+                <td><span class="score-badge score-{{ r.score_class }}">{{ r.deviation_score }}/100</span></td>
+                <td>{{ r.declared_income | comma }}</td>
+                <td><span class="reason">{{ r.audit_reasons }}</span></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const pageSearch = document.getElementById('pageSearch');
+pageSearch.addEventListener('input', () => {
+    const q = pageSearch.value.trim().toLowerCase();
+    document.querySelectorAll('#peopleBody tr').forEach(row => {
+        const match = row.dataset.name.includes(q) || row.dataset.cnic.includes(q);
+        row.style.display = match ? '' : 'none';
+    });
+});
+
+// sortable columns
+document.querySelectorAll('th[data-key]').forEach(th => {
+    let asc = false;
+    th.addEventListener('click', () => {
+        asc = !asc;
+        const key = th.dataset.key;
+        const tbody = document.getElementById('peopleBody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        // simple re-fetch approach not needed; sort by visible cell text/number
+        rows.sort((a, b) => {
+            const colIndex = Array.from(th.parentNode.children).indexOf(th);
+            let va = a.children[colIndex].innerText;
+            let vb = b.children[colIndex].innerText;
+            const na = parseFloat(va.replace(/,/g, ''));
+            const nb = parseFloat(vb.replace(/,/g, ''));
+            if (!isNaN(na) && !isNaN(nb)) { va = na; vb = nb; }
+            if (va < vb) return asc ? -1 : 1;
+            if (va > vb) return asc ? 1 : -1;
+            return 0;
+        });
+        rows.forEach(r => tbody.appendChild(r));
+    });
+});
+</script>
+{% endblock %}

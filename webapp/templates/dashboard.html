@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - Tax Graph AI{% endblock %}
+{% block nav_dashboard %}active{% endblock %}
+
+{% block content %}
+<h1 style="margin-bottom:4px;">Graph AI for Broadening the National Tax Net</h1>
+<p style="color:var(--muted); margin-bottom:28px;">Tax Compliance Deviation Dashboard — Knowledge Graph &amp; Entity Resolution Pipeline</p>
+
+<div class="stats">
+    <div class="stat-card">
+        <div class="value">{{ total }}</div>
+        <div class="label">Total People Analyzed</div>
+    </div>
+    <div class="stat-card">
+        <div class="value" style="color: var(--orange)">{{ flagged }}</div>
+        <div class="label">Flagged (Any Deviation)</div>
+    </div>
+    <div class="stat-card">
+        <div class="value" style="color: var(--red)">{{ high_risk }}</div>
+        <div class="label">High Risk (Score &ge; 70)</div>
+    </div>
+    <div class="stat-card">
+        <div class="value">{{ avg_score }}</div>
+        <div class="label">Average Deviation Score</div>
+    </div>
+</div>
+
+<div class="nav-cards">
+    <a class="nav-card" href="/people">
+        <div class="nav-card-icon">👥</div>
+        <div>
+            <div class="nav-card-title">All People</div>
+            <div class="nav-card-desc">Browse, search and sort every person in the audit, ranked by deviation score.</div>
+        </div>
+        <div class="nav-card-arrow">→</div>
+    </a>
+    <a class="nav-card" href="/guide">
+        <div class="nav-card-icon">📖</div>
+        <div>
+            <div class="nav-card-title">Scoring &amp; Tax Guide</div>
+            <div class="nav-card-desc">See exactly why each score is given, and look up Pakistan's income tax slabs.</div>
+        </div>
+        <div class="nav-card-arrow">→</div>
+    </a>
+</div>
+{% endblock %}

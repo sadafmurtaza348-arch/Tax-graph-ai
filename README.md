@@ -5,7 +5,6 @@ deviations by comparing people's **declared income** against their
 **lifestyle signals** — vehicle ownership and electricity usage — using
 entity resolution and a knowledge graph.
 
-**🌐 Live demo:** [sadaf348.pythonanywhere.com](https://sadaf348.pythonanywhere.com)
 
 ---
 
